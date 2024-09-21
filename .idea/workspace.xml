@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="refractored logi.jsx" />
+    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="initial commit">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/Solution.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,13 +20,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "4121nnn"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/4121nnn/JavaStreams",
+    "accountId": "3d68656c-6682-4338-908b-55a3113c05ae"
+  }
+}]]></component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2mNaxlI4x61wupeWN3UtsAXxEN3" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,12 +54,18 @@
     "Spring Boot.JavaStreams.executor": "Run",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/4121n/projects/java/JavaStreams",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
   <component name="RunManager">
@@ -68,6 +94,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726919737225</updated>
       <workItem from="1726919739160" duration="872000" />
+      <workItem from="1726920663034" duration="6368000" />
     </task>
     <task id="LOCAL-00001" summary="Refractored">
       <option name="closed" value="true" />
@@ -85,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726920061684</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit">
+      <option name="closed" value="true" />
+      <created>1726920814056</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1726920814056</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +129,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Refractored" />
     <MESSAGE value="refractored logi.jsx" />
-    <option name="LAST_COMMIT_MESSAGE" value="refractored logi.jsx" />
+    <MESSAGE value="initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
   </component>
 </project>

@@ -21,7 +21,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DynamicCompiler {
 
-    private static final String SUBMISSION_DIR = "tmp/submissions/";
+    private static final String SUBMISSION_DIR = "back/tmp/submissions/";
     private final String TEST_CLASS_NAME = "TestRunner";
     private final String SOLUTION = "Solution";
 
