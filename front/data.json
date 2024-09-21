@@ -1,0 +1,227 @@
+[
+    {
+        "title": "Find the first element",
+        "description": "Given a list of integers, the task is to get the first element of the list.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public int findFirst(List<Integer> nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[1, 2, 3, 4, 5, 6, 7]",
+                "output": 1
+            },
+            {
+                "input": "[6, 6, 6, 2, 3]",
+                "output": 6
+            }
+        ]
+    },
+    {
+        "title": "Find duplicate elements",
+        "description": "Given a list containing some integers, the task is to find the duplicate elements in this list.",
+        "difficulty": "Medium",
+        "template": "class Solution {\n    public List<Integer> findDuplicates(List<Integer> nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[5, 13, 4, 21, 13, 27, 2, 59, 59, 34]",
+                "output": [59, 13]
+            },
+            {
+                "input": "[5, 13, 4, 21, 27, 2, 59, 34]",
+                "output": []
+            }
+        ]
+    },
+    {
+        "title": "Count occurrence of a given character",
+        "description": "Given a string and a character, the task is to make a function which counts the occurrence of the given character in the string using Stream API.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public String countOccurance(String s, char c){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "str = \"java streams\", c = 's'",
+                "output": 2
+            },
+            {
+                "input": "str = \"abcdabcdaaa\", c = 'a'",
+                "output": 5
+            }
+        ]
+    },
+    {
+        "title": "Find the Maximum Value in an Array",
+        "description": "Given an integer array nums, return the maximum value from the array.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public int findMax(int[] nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[3, 5, 7, 2, 8, 6]",
+                "output": "7"
+            },
+            {
+                "input": "[0, 0, 0, 1]",
+                "output": "1"
+            }
+        ]
+    },
+    {
+        "title": "Sum of All Elements in an Array",
+        "description": "Given an integer array nums, return the sum of all elements.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public int sumArray(int[] nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[1, 2, 3, 4, 5]",
+                "output": "15"
+            },
+            {
+                "input": "[7, 7, 7]",
+                "output": "21"
+            }
+        ]
+    },
+    {
+        "title": "Count Even Numbers in an Array",
+        "description": "Given an integer array nums, return the count of even numbers.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public int countEvens(int[] nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[1, 2, 3, 4, 5, 6]",
+                "output": "2"
+            },
+            {
+                "input": "[1, 3, 7]",
+                "output": "0"
+            }
+        ]
+    },
+    {
+        "title": "Check if All Elements Are Positive",
+        "description": "Given an integer array nums, return true if all elements are positive, otherwise return false.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public boolean areAllPositive(int[] nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[1, 2, 3, 4, 5]",
+                "output": "true"
+            },
+            {
+                "input": "[1, -2000, 7]",
+                "output": "false"
+            }
+        ]
+    },
+    {
+        "title": "Find First Positive Number",
+        "description": "Given an integer array nums, return the first positive number found in the array. If no positive number is found, return -1.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public int findFirstPositive(int[] nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[-1, -2, 3, 4, -5]",
+                "output": "3"
+            },
+            {
+                "input": "[-5, -2, -4]",
+                "output": "-1"
+            }
+        ]
+    },
+    {
+        "title": "Find the Minimum Value in an Array",
+        "description": "Given an integer array nums, return the minimum value from the array.",
+        "difficulty": "Easy",
+        "template": "class Solution {\n    public int findMin(int[] nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[3, 5, 7, 2, 8, 6]",
+                "output": "2"
+            },
+            {
+                "input": "[100, -2, -4]",
+                "output": "-4"
+            }
+        ]
+    },
+    {
+        "title": "Group Anagrams",
+        "description": "Given an array of strings, group the anagrams together. Two strings are considered anagrams if they contain the same characters in any order. Return a list of lists, where each list contains all the anagrams from the input array.",
+        "difficulty": "Medium",
+        "template": "class Solution {\n    public List<List<String>> groupAnagrams(String[] strs){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[\"eat\", \"tea\", \"tan\", \"ate\", \"nat\", \"bat\"]",
+                "output": "[[\"ate\", \"eat\", \"tea\"],[\"nat\", \"tan\"],[\"bat\"]]"
+            },
+            {
+                "input": "[\"aa\", \"ab\", \"ba\"]",
+                "output": "[[\"ab\", \"ba\"]]"
+            }
+        ]
+    },
+    {
+        "title": "Find the Top K Frequent Elements",
+        "description": "Given an integer array nums and an integer k, return the k most frequent elements.",
+        "difficulty": "Hard",
+        "template": "class Solution {\n    public List<Integer> topKFrequent(int[] nums){\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "nums = [1, 1, 1, 2, 2, 3], k = 2",
+                "output": "[1, 2]"
+            },
+            {
+                "input": "nums = [2, 4, 4, 4, 3], k = 1",
+                "output": "[4]"
+            }
+        ]
+    },
+    {
+        "title": "Find the Intersection of Two Arrays",
+        "description": "Given two integer arrays nums1 and nums2, return an array of their intersection. Each element in the result must be unique.",
+        "difficulty": "Hard",
+        "template": "class Solution {\n    public int[] intersection(int[] nums1, int[] nums2) {\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "nums1 = [1, 2, 2, 1], nums2 = [2, 2]",
+                "output": "[2]"
+            },
+            {
+                "input": "nums1 = [2, 4, 4, 4, 3], nums2 = [7, 6]",
+                "output": "[]"
+            }
+        ]
+    },
+    {
+        "title": "Find the Missing Number in an Array",
+        "description": "Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.",
+        "difficulty": "Medium",
+        "template": "class Solution {\n    public int findMissingNumber(int[] nums) {\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "[3, 0, 1]",
+                "output": "2"
+            },
+            {
+                "input": "[2, 1, 5, 0, 3]",
+                "output": "4"
+            }
+        ]
+    },
+    {
+        "title": "Two Sum",
+        "description": "Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.\nYou may assume that each input would have exactly one solution, and you may not use the same element twice.\n\nYou can return the answer in any order.",
+        "difficulty": "Hard",
+        "template": "class Solution {\n    public int[] twoSum(int[] nums, int target) {\n        \n    }\n}",
+        "examples": [
+            {
+                "input": "nums = [2,7,11,15], target = 9",
+                "output": "[0,1]",
+                "explanation": "Because nums[0] + nums[1] == 9, we return [0, 1]."
+            },
+            {
+                "input": "nums = [3,2,4], target = 6",
+                "output": "[1,2]"
+            }
+        ]
+    }
+]

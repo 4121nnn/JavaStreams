@@ -1,0 +1,36 @@
+spring:
+  application:
+    name: streams
+  config:
+    import: "classpath:env.properties"
+  datasource:
+    url: jdbc:mysql://${DB_HOST}:3306/streams #host.docker.internal
+    username: ${DB_USERNAME}
+    password: ${DB_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: none
+  sql:
+    init:
+      mode: always
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: ${GOOGLE_CLIENT_ID}
+            client-secret: ${GOOGLE_CLIENT_SECRET}
+            scope: email,profile
+            redirect-uri: http://${BACKEND_HOST}:${BACKEND_PORT}/login/oauth2/code/google
+          github:
+            client-id: ${GITHUB_CLIENT_ID}
+            client-secret: ${GITHUB_CLIENT_SECRET}
+            scope: profile
+            redirect-uri: http://${BACKEND_HOST}:${BACKEND_PORT}/login/oauth2/code/github
+server:
+  port: ${BACKEND_PORT}
+
+
+
+
+

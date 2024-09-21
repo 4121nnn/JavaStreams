@@ -1,0 +1,120 @@
+:root[theme="light"] {
+    --bg-color: #fff;
+    --second-bg-color: #a3a3a3;
+    --text-color: #000;
+    --btn-bg-color: #000;
+    --btn-text-color: #fff;
+    --card-header-bg: #f5f5f5;
+    --editor-text-color: #111;
+    --card-bg: #F5F5F5;
+    --card--text-color: #1E1E1E;
+}
+
+:root[theme="dark"] {
+    --bg-color: #1A1A1A;
+    --second-bg-color: #292929;
+    --text-color: #fff;
+    --btn-bg-color: #fff;
+    --btn-text-color: #222;
+    --card-header-bg: #333333;
+    --card-header-text-color: #F5F5F5;
+    --card-bg: #1E1E1E;
+    --card--text-color: #F5F5F5;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+button{
+    background-color: var(--btn-bg-color);
+    color: var(--btn-text-color)
+}
+
+/* input, textarea{
+    color: var(--bg-color) !important;
+} */
+
+.card{
+    background-color: var( --card-bg);
+    color: var(--card--text-color);
+}
+
+.card-header{
+    background-color: var( --card-header-bg);
+    color: var(--card-header-text-color);
+}
+.card-body{
+    
+}
+
+.bg{
+    background-color: var( --card-bg);
+}
+
+.alternate-bg:nth-child(even) {
+    background-color: #2A2A2A;
+}
+  
+.alternate-bg:nth-child(odd) {
+    background-color:var(--bg-color); 
+}
+
+@keyframes coolAnimation {
+    0% {
+      background-position: 0% 0%;
+      transform: scale(1);
+    }
+    50% {
+      background-position: 100% 100%;
+      transform: scale(1.05);
+    }
+    100% {
+      background-position: 0% 0%;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.8;
+    }
+  }
+  
+  .bg-cool-animation {
+    background: linear-gradient(45deg,  #4f4f4f, #3e3e3e, #1e1e1e, #2b2b2b );
+    background-size: 400% 400%;
+    animation: coolAnimation 10s ease infinite, pulse 2s ease infinite;
+    z-index: -1;
+  }
+  
+  
+  
+  .relative {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .relative::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(55, 55, 55, 0); /* Change this to fit your needs */
+    z-index: -1;
+  }
+  
+  .relative .content {
+    position: relative;
+    z-index: 1;
+  }
+  
