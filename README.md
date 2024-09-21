@@ -96,5 +96,5 @@ A project designed to help users practice and master the **Java Streams API**. T
 
 ## Docker Support
 
-A `Dockerfile` is provided to easily build and deploy the project. To build and run the Docker container:
+A `Dockerfile` is provided to easily build and deploy the project.
 
