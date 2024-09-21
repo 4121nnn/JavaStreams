@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="initial commit">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/Solution.java" beforeDir="false" />
+    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="README.md">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +89,7 @@
       <option name="presentableId" value="Default" />
       <updated>1726919737225</updated>
       <workItem from="1726919739160" duration="872000" />
-      <workItem from="1726920663034" duration="6368000" />
+      <workItem from="1726920663034" duration="6624000" />
     </task>
     <task id="LOCAL-00001" summary="Refractored">
       <option name="closed" value="true" />
@@ -120,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726920814056</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="README.md">
+      <option name="closed" value="true" />
+      <created>1726936676773</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1726936676773</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +133,7 @@
     <MESSAGE value="Refractored" />
     <MESSAGE value="refractored logi.jsx" />
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
   </component>
 </project>

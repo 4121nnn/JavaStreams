@@ -1,5 +1,7 @@
 # Java Streams Project
 
+Click on the image to view on YouTube.
+
 [![Video Title](https://i9.ytimg.com/vi_webp/GCMvXJZXTKg/mqdefault.webp?v=66eef3de&sqp=CIjpu7cG&rs=AOn4CLDWNfoEXTjO8yP3N8cmY9Oq1IntCw)](https://youtu.be/GCMvXJZXTKg)
 
 A project designed to help users practice and master the **Java Streams API**. This project is built using **Spring Boot** for the backend and **React** (with Vite) for the frontend, along with a range of modern technologies.
@@ -85,7 +87,6 @@ A project designed to help users practice and master the **Java Streams API**. T
 - **JWT Authentication**: The project uses JSON Web Tokens (JWT) to secure API requests and enforce stateless session management.
 - **Email/Password Authentication**: Users can register and log in using their email and password. Upon successful authentication, JWT tokens are issued.
 - **OAuth2 Login**: Users can also log in via **Google** and **GitHub** OAuth2 providers. Upon successful login, JWT tokens are issued.
-## Database Migrations
 
 ## Usage
 
