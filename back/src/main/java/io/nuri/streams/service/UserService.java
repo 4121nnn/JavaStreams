@@ -3,12 +3,12 @@ package io.nuri.streams.service;
 import io.jsonwebtoken.Claims;
 import io.nuri.streams.dto.PasswordDto;
 import io.nuri.streams.dto.Response;
-import io.nuri.streams.dto.UserRequest;
 import io.nuri.streams.dto.UserDto;
+import io.nuri.streams.dto.UserRequest;
 import io.nuri.streams.entity.Role;
+import io.nuri.streams.entity.UserEntity;
 import io.nuri.streams.exception.EmailExistsException;
 import io.nuri.streams.exception.UserNotFoundException;
-import io.nuri.streams.entity.UserEntity;
 import io.nuri.streams.repository.RoleRepository;
 import io.nuri.streams.repository.UserRepository;
 import io.nuri.streams.security.jwt.JwtUtil;
@@ -18,12 +18,12 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
 
-import java.util.*;
+import java.util.Map;
+import java.util.Optional;
+import java.util.Set;
 
 @Service
 @RequiredArgsConstructor
@@ -44,7 +44,6 @@ public class UserService {
 
         String name = email.substring(0, email.indexOf('@'));
         userRepository.save(UserEntity.builder()
-                        .id(UUID.randomUUID().toString())
                         .username(name)
                         .email(email)
                         .password(encoder.encode(userRequest.password()))
@@ -108,7 +107,6 @@ public class UserService {
             Role role = roleRepository.findByName("USER").orElse(new Role(1L, "USER"));
 
             UserEntity newUser = userRepository.save(UserEntity.builder()
-                    .id(UUID.randomUUID().toString())
                     .username(name)
                     .email(email)
                     .password(encoder.encode("RANDOM_PASSWORD"))

@@ -1,4 +1,4 @@
-package io.nuri.streams.contoroller;
+package io.nuri.streams.controller;
 
 import io.nuri.streams.dto.UserDto;
 import io.nuri.streams.service.UserService;
@@ -21,7 +21,7 @@ public class UserController {
 
     @DeleteMapping("/{id}")
     @ResponseStatus(HttpStatus.OK)
-    public void deleteUserById(String id){
+    public void deleteUserById(@PathVariable String id){
         userService.deleteUserById(id);
     }
 }

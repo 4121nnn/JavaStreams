@@ -4,8 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="README.md">
+    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="corrected README.md">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/ProblemTitleDtoAssembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/ProblemTitleDtoAssembler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/AdminController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/ProblemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/ProblemController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/PublicApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/PublicApiController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Problem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/ProblemExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/ProblemExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Submission.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Submission.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/UserEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/CustomUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/SecurityConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/oauth2/Oauth2LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/oauth2/Oauth2LoginSuccessHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/ProblemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/ProblemService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/SubmissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/SubmissionService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/src/test/java/io/nuri/streams/contoroller/ProblemControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/test/java/io/nuri/streams/controller/ProblemControllerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,18 +39,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "4121nnn"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;4121nnn&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/4121nnn/JavaStreams",
-    "accountId": "3d68656c-6682-4338-908b-55a3113c05ae"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/4121nnn/JavaStreams&quot;,
+    &quot;accountId&quot;: &quot;3d68656c-6682-4338-908b-55a3113c05ae&quot;
   }
-}]]></component>
+}</component>
   <component name="JpbToolWindowState">
     <option name="isToolWindowVisible" value="false" />
   </component>
@@ -39,30 +63,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.JavaStreams.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/4121n/projects/java/JavaStreams",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.JavaStreams.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/4121n/projects/java/JavaStreams&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="JavaStreams" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="streams" />
@@ -89,7 +113,10 @@
       <option name="presentableId" value="Default" />
       <updated>1726919737225</updated>
       <workItem from="1726919739160" duration="872000" />
-      <workItem from="1726920663034" duration="6624000" />
+      <workItem from="1726920663034" duration="6714000" />
+      <workItem from="1726937577207" duration="81000" />
+      <workItem from="1726942027165" duration="32000" />
+      <workItem from="1726970209186" duration="2827000" />
     </task>
     <task id="LOCAL-00001" summary="Refractored">
       <option name="closed" value="true" />
@@ -123,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1726936676773</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="corrected README.md">
+      <option name="closed" value="true" />
+      <created>1726936916751</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1726936916751</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -134,6 +169,7 @@
     <MESSAGE value="refractored logi.jsx" />
     <MESSAGE value="initial commit" />
     <MESSAGE value="README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="README.md" />
+    <MESSAGE value="corrected README.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="corrected README.md" />
   </component>
 </project>

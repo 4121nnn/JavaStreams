@@ -1,21 +1,20 @@
 package io.nuri.streams.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Lob;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 
 @Entity
 @Table(name = "submissions")
-@Data
+@Setter
+@Getter
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Submission {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String userId;
     private String problemId;

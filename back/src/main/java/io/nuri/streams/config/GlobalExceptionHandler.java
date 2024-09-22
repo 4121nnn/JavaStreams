@@ -29,7 +29,6 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(CompileException.class)
     public ResponseEntity<Response> compileExceptionHandler(CompileException ex){
-        var message = new HashMap<String, String>();
         return ResponseEntity
                 .ok()
                 .body(new Response(Map.of("ERROR", ex.getMessage())));

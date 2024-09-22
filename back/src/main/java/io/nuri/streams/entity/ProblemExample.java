@@ -1,10 +1,7 @@
 package io.nuri.streams.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
@@ -17,6 +14,7 @@ import lombok.*;
 public class ProblemExample {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String testInput;
     private String testOutput;

@@ -3,11 +3,11 @@ package io.nuri.streams.service;
 import io.nuri.streams.dto.ProblemRequest;
 import io.nuri.streams.dto.ProblemTitleDto;
 import io.nuri.streams.dto.Response;
-import io.nuri.streams.exception.ProblemNotFoundException;
 import io.nuri.streams.entity.Problem;
 import io.nuri.streams.entity.ProblemExample;
 import io.nuri.streams.entity.Submission;
 import io.nuri.streams.entity.UserEntity;
+import io.nuri.streams.exception.ProblemNotFoundException;
 import io.nuri.streams.repository.ProblemExampleRepository;
 import io.nuri.streams.repository.ProblemRepository;
 import lombok.RequiredArgsConstructor;
@@ -30,20 +30,13 @@ public class ProblemService {
     private final ProblemRepository problemRepository;
     private final SubmissionService submissionService;
     private final DynamicCompiler dynamicCompiler;
-    //private final ExecutorService executorService = Executors.newVirtualThreadPerTaskExecutor();
     private final ExecutorService executorService = Executors.newSingleThreadExecutor();
     private final UserService userService;
 
 
     public Problem getProblemById(String problemId) {
-//        boolean isProblemSolved = false;
-//        executorService.submit(() -> {
-//            isProblemSolved = submissionService.isProblemSolved(userId, problemId);
-//        });
-        Problem problem = problemRepository.findById(problemId)
+        return problemRepository.findById(problemId)
                 .orElseThrow(() -> new ProblemNotFoundException("Problem not exists by id " + problemId));
-
-        return problem;
     }
 
     public Page<ProblemTitleDto> getProblemTitles(Pageable page) {

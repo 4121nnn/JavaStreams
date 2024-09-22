@@ -1,10 +1,7 @@
 package io.nuri.streams.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import net.minidev.json.annotate.JsonIgnore;
 
 import java.util.Collection;
@@ -13,13 +10,15 @@ import java.util.Set;
 
 @Entity
 @Table(name = "users")
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
 public class UserEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
     private String username;
     @Column(unique = true)
@@ -35,7 +34,7 @@ public class UserEntity {
                     name = "role_id", referencedColumnName = "id")
     )
     @JsonIgnore
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToMany(fetch = FetchType.EAGER, cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private Set<Role> roles = new HashSet<>();
 
 }

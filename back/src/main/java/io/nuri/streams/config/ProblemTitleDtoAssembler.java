@@ -10,7 +10,6 @@ public class ProblemTitleDtoAssembler implements RepresentationModelAssembler<Pr
 
     @Override
     public EntityModel<ProblemTitleDto> toModel(ProblemTitleDto problemTitleDto) {
-        // Here you can add HATEOAS links if needed
         return EntityModel.of(problemTitleDto);
     }
 }

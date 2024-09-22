@@ -4,12 +4,12 @@ Click on the image to view on YouTube.
 
 [![Video Title](https://i9.ytimg.com/vi_webp/GCMvXJZXTKg/mqdefault.webp?v=66eef3de&sqp=CIjpu7cG&rs=AOn4CLDWNfoEXTjO8yP3N8cmY9Oq1IntCw)](https://youtu.be/GCMvXJZXTKg)
 
-A project designed to help users practice and master the **Java Streams API**. This project is built using **Spring Boot** for the backend and **React** (with Vite) for the frontend, along with a range of modern technologies.
+A project designed to help users practice the **Java Streams API**. This project is built using **Spring Boot** for the backend and **React** (with Vite) for the frontend.
 
 
 ## Features
 
-- Interactive exercises to learn and practice Java Streams.
+- Interactive exercises practice Java Streams.
 - **Spring Boot** backend with REST APIs.
 - **React** frontend built using **Vite** for fast development and optimized builds.
 - **Email/password registration and login** functionality.
@@ -40,7 +40,7 @@ A project designed to help users practice and master the **Java Streams API**. T
     ```
 
 3. **Backend Setup (Spring Boot)**:
-   - Ensure you have Java (version 21 or above) installed.
+   - Ensure you have Java (version 17 or above) installed.
    - Create a MySQL database:
 
     ```sql
@@ -88,13 +88,7 @@ A project designed to help users practice and master the **Java Streams API**. T
 - **Email/Password Authentication**: Users can register and log in using their email and password. Upon successful authentication, JWT tokens are issued.
 - **OAuth2 Login**: Users can also log in via **Google** and **GitHub** OAuth2 providers. Upon successful login, JWT tokens are issued.
 
-## Usage
-
-- Visit the homepage to start solving exercises related to Java Streams.
-- The backend provides the APIs to fetch exercises and submit solutions.
-- React handles the frontend rendering for a dynamic, responsive user experience.
-
 ## Docker Support
 
-A `Dockerfile` is provided to easily build and deploy the project. To build and run the Docker container:
+A `Dockerfile` is provided to easily build and deploy the project.
 

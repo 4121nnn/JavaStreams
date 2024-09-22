@@ -20,8 +20,4 @@ public class Role {
     private Long id;
     @Column(unique = true)
     private String name;
-
-//    @ManyToMany(mappedBy = "roles", fetch = FetchType.LAZY)
-//    @JsonIgnore
-//    private List<UserEntity> users;
 }

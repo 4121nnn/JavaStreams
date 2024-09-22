@@ -22,8 +22,8 @@ import java.util.List;
 public class DynamicCompiler {
 
     private static final String SUBMISSION_DIR = "back/tmp/submissions/";
-    private final String TEST_CLASS_NAME = "TestRunner";
-    private final String SOLUTION = "Solution";
+    private static final String TEST_CLASS_NAME = "TestRunner";
+    private static final String SOLUTION = "Solution";
 
     public void submit(Submission submission) throws CompileException {
         compile(submission.getProblemId(), submission.getSolution(), SOLUTION);
@@ -58,18 +58,19 @@ public class DynamicCompiler {
             Process process = builder.start();
 
             // Capture stdout and stderr separately
-            BufferedReader stdOutReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            BufferedReader stdErrReader = new BufferedReader(new InputStreamReader(process.getErrorStream()));
+            try (BufferedReader stdOutReader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                 BufferedReader stdErrReader = new BufferedReader(new InputStreamReader(process.getErrorStream()))) {
 
-            // Read stdout
-            String line;
-            while ((line = stdOutReader.readLine()) != null) {
-                output.append(line).append("\n");
-            }
+                // Read stdout
+                String line;
+                while ((line = stdOutReader.readLine()) != null) {
+                    output.append(line).append("\n");
+                }
 
-            // Read stderr
-            while ((line = stdErrReader.readLine()) != null) {
-                errorOutput.append(line).append("\n");
+                // Read stderr
+                while ((line = stdErrReader.readLine()) != null) {
+                    errorOutput.append(line).append("\n");
+                }
             }
 
             // Wait for the process to finish
@@ -82,11 +83,11 @@ public class DynamicCompiler {
         String out = output.toString();
         String error = errorOutput.toString();
 
-        if(!error.isEmpty()){
-            throw new CompileException(error + "\n" +  out);
+        if (!error.isEmpty()) {
+            throw new CompileException(error + "\n" + out);
         }
-
     }
+
 
     private void compile(String problemId, String code, String className) throws CompileException {
         String currentDir = System.getProperty("user.dir");
@@ -99,7 +100,7 @@ public class DynamicCompiler {
         }
 
         // Write the user code to the file
-        File javaFile = new File(problemDirPath + "/" +  className + ".java");
+        File javaFile = new File(problemDirPath + "/" + className + ".java");
         try (FileWriter writer = new FileWriter(javaFile)) {
             writer.write(code);
         } catch (IOException e) {
@@ -112,39 +113,38 @@ public class DynamicCompiler {
 
         // Compile the Java file with annotation processing disabled
         JavaCompiler compiler = ToolProvider.getSystemJavaCompiler();
-        StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null);
-        Iterable<? extends JavaFileObject> compilationUnits = fileManager.getJavaFileObjects(javaFile);
-        List<String> options = Arrays.asList("-proc:none", "-classpath", problemDirPath.toString());  // Disable annotation processing
-        JavaCompiler.CompilationTask task = compiler.getTask(compilationErrors, fileManager, diagnostics, options, null, compilationUnits);
-        boolean success = task.call();
 
-        try {
-            fileManager.close();
+        try (StandardJavaFileManager fileManager = compiler.getStandardFileManager(null, null, null)) {
+            Iterable<? extends JavaFileObject> compilationUnits = fileManager.getJavaFileObjects(javaFile);
+            List<String> options = Arrays.asList("-proc:none", "-classpath", problemDirPath.toString());  // Disable annotation processing
+            JavaCompiler.CompilationTask task = compiler.getTask(compilationErrors, fileManager, diagnostics, options, null, compilationUnits);
+            boolean success = task.call();
+
+            // If compilation fails, capture and return error messages
+            if (!success) {
+                StringBuilder errorMsg = new StringBuilder();
+                for (Diagnostic<? extends JavaFileObject> diagnostic : diagnostics.getDiagnostics()) {
+                    if (diagnostic.getSource() != null) {
+                        errorMsg.append("Line ")
+                                .append(diagnostic.getLineNumber())
+                                .append(": error: ")
+                                .append(diagnostic.getMessage(null))
+                                .append("\n");
+                    } else {
+                        errorMsg.append("Error: ")
+                                .append(diagnostic.getMessage(null))
+                                .append("\n");
+                    }
+                }
+                throw new CompileException(errorMsg.toString());
+            }
         } catch (IOException e) {
             throw new CompileException(e.getMessage());
         }
 
-        // If compilation fails, capture and return error messages
-        if (!success) {
-            StringBuilder errorMsg = new StringBuilder();
-            for (Diagnostic<? extends JavaFileObject> diagnostic : diagnostics.getDiagnostics()) {
-                if (diagnostic.getSource() != null) {
-                    errorMsg.append("Line ")
-                            .append(diagnostic.getLineNumber())
-                            .append(": error: ")
-                            .append(diagnostic.getMessage(null))
-                            .append("\n");
-                } else {
-                    errorMsg.append("Error: ")
-                            .append(diagnostic.getMessage(null))
-                            .append("\n");
-                }
-
-            }
-            throw new CompileException(errorMsg.toString());
-        }
         if (!javaFile.delete()) {
             log.warn("Failed to delete the file.");
         }
     }
+
 }

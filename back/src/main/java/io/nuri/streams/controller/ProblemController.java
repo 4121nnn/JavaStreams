@@ -1,4 +1,4 @@
-package io.nuri.streams.contoroller;
+package io.nuri.streams.controller;
 
 import io.nuri.streams.dto.Response;
 import io.nuri.streams.entity.Problem;

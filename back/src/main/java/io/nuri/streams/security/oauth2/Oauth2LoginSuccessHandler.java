@@ -47,7 +47,7 @@ public class Oauth2LoginSuccessHandler extends SimpleUrlAuthenticationSuccessHan
                         .build());
 
         String redirectUrl =  "http://localhost:3000" + "/oauth2-success?token=" + URLEncoder.encode(token, StandardCharsets.UTF_8);
-        log.info(redirectUrl);
+
         getRedirectStrategy().sendRedirect(request, response, redirectUrl);
     }
 }

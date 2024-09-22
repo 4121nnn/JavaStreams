@@ -1,8 +1,8 @@
 package io.nuri.streams.security;
 
 import io.nuri.streams.entity.Role;
-import io.nuri.streams.exception.UserNotFoundException;
 import io.nuri.streams.entity.UserEntity;
+import io.nuri.streams.exception.UserNotFoundException;
 import io.nuri.streams.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -11,7 +11,6 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 @Service

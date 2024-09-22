@@ -1,8 +1,6 @@
-package io.nuri.streams.contoroller;
+package io.nuri.streams.controller;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ProblemControllerTest {
 

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Service;
 
 import java.util.Collections;
 import java.util.Set;
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -23,7 +22,6 @@ public class SubmissionService {
 
     public void saveSolvedProblem(String userId, String problemId, String solution){
         submissionRepository.save(Submission.builder()
-                        .id(UUID.randomUUID().toString())
                         .userId(userId)
                         .problemId(problemId)
                         .solution(solution)
