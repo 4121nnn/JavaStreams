@@ -4,32 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="corrected README.md">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/back/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/back/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/ProblemTitleDtoAssembler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/config/ProblemTitleDtoAssembler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/ProblemController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/ProblemController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/PublicApiController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/PublicApiController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/contoroller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Problem.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Problem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/ProblemExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/ProblemExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Submission.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/Submission.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/UserEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/entity/UserEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/CustomUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/CustomUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/jwt/JwtAuthenticationFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/oauth2/Oauth2LoginSuccessHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/security/oauth2/Oauth2LoginSuccessHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/DynamicCompiler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/ProblemService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/ProblemService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/SubmissionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/SubmissionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/main/java/io/nuri/streams/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/back/src/test/java/io/nuri/streams/contoroller/ProblemControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/back/src/test/java/io/nuri/streams/controller/ProblemControllerTest.java" afterDir="false" />
+    <list default="true" id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="suggestions implemented">
+      <change beforePath="$PROJECT_DIR$/.idea/JavaStreams.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/check_if_all_elements_are_positive/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/check_if_all_elements_are_positive/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/check_if_all_elements_are_positive/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_even_numbers_in_an_array/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_occurrence_of_a_given_character/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_occurrence_of_a_given_character/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/count_occurrence_of_a_given_character/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_duplicate_elements/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_duplicate_elements/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_duplicate_elements/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_first_positive_number/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_first_positive_number/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_first_positive_number/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_first_element/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_first_element/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_first_element/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_intersection_of_two_arrays/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_intersection_of_two_arrays/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_intersection_of_two_arrays/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_intersection_of_two_arrays/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_maximum_value_in_an_array/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_maximum_value_in_an_array/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_maximum_value_in_an_array/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_minimum_value_in_an_array/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_minimum_value_in_an_array/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_minimum_value_in_an_array/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_missing_number_in_an_array/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_missing_number_in_an_array/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_missing_number_in_an_array/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_top_k_frequent_elements/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_top_k_frequent_elements/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/find_the_top_k_frequent_elements/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/group_anagrams/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/group_anagrams/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/group_anagrams/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/sum_of_all_elements_in_an_array/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/sum_of_all_elements_in_an_array/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/sum_of_all_elements_in_an_array/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/two_sum/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/two_sum/TestCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/two_sum/TestRunner.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/back/tmp/submissions/utyuuyt/Solution.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,47 +83,26 @@
     <option name="isToolWindowVisible" value="false" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2mNaxlI4x61wupeWN3UtsAXxEN3" />
+  <component name="ProjectId" id="2mPLn0ANNx1ZdtOWSZAcjVT9YEM" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.JavaStreams.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/4121n/projects/java/JavaStreams&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
-    <configuration name="JavaStreams" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="streams" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="io.nuri.streams.JavaStreams" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -107,69 +114,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="" />
-      <created>1726919737225</created>
+      <changelist id="43cfed3a-c002-4805-af90-7cf91462aeae" name="Changes" comment="suggestions implemented" />
+      <created>1726973429029</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1726919737225</updated>
-      <workItem from="1726919739160" duration="872000" />
-      <workItem from="1726920663034" duration="6714000" />
-      <workItem from="1726937577207" duration="81000" />
-      <workItem from="1726942027165" duration="32000" />
-      <workItem from="1726970209186" duration="2827000" />
+      <updated>1726973429029</updated>
+      <workItem from="1726973431526" duration="115000" />
+      <workItem from="1726973587467" duration="180000" />
     </task>
-    <task id="LOCAL-00001" summary="Refractored">
-      <option name="closed" value="true" />
-      <created>1726919997026</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1726919997026</updated>
-    </task>
-    <task id="LOCAL-00002" summary="refractored logi.jsx">
-      <option name="closed" value="true" />
-      <created>1726920061684</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1726920061684</updated>
-    </task>
-    <task id="LOCAL-00003" summary="initial commit">
-      <option name="closed" value="true" />
-      <created>1726920814056</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1726920814056</updated>
-    </task>
-    <task id="LOCAL-00004" summary="README.md">
-      <option name="closed" value="true" />
-      <created>1726936676773</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1726936676773</updated>
-    </task>
-    <task id="LOCAL-00005" summary="corrected README.md">
-      <option name="closed" value="true" />
-      <created>1726936916751</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1726936916751</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Refractored" />
-    <MESSAGE value="refractored logi.jsx" />
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="README.md" />
-    <MESSAGE value="corrected README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="corrected README.md" />
   </component>
 </project>
