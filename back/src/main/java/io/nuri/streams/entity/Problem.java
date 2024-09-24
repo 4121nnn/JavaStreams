@@ -9,6 +9,7 @@ import java.util.List;
 @Table(name = "problems")
 @Setter
 @Getter
+@Builder
 @AllArgsConstructor
 @NoArgsConstructor
 public class Problem {

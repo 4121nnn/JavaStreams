@@ -87,8 +87,3 @@ A project designed to help users practice the **Java Streams API**. This project
 - **JWT Authentication**: The project uses JSON Web Tokens (JWT) to secure API requests and enforce stateless session management.
 - **Email/Password Authentication**: Users can register and log in using their email and password. Upon successful authentication, JWT tokens are issued.
 - **OAuth2 Login**: Users can also log in via **Google** and **GitHub** OAuth2 providers. Upon successful login, JWT tokens are issued.
-
-## Docker Support
-
-A `Dockerfile` is provided to easily build and deploy the project.
-
