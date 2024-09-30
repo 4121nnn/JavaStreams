@@ -37,8 +37,6 @@ export const login = (userRequest) => axios.put(REST_API_BASE_URL + PUBLIC_PATH 
 
 export const signup = (userRequest) => axios.post(REST_API_BASE_URL + PUBLIC_PATH + "/signup", userRequest);
 
-export const loginWithGoogle = () => axios.get(REST_API_BASE_URL + "/oauth2/authorization/google");
-
 export const getProblemSolvedProblemByUser = () => axios.get(REST_API_BASE_URL + PROBLEM_PATH + "/solved");
 
 export const editProblem = (ProblemRequest) => axios.put(REST_API_BASE_URL + ADMIN_PATH + "/problem", ProblemRequest);

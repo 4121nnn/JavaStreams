@@ -3,7 +3,7 @@
 Click on the image to view on YouTube.
 
 
-[![Video Title](https://i9.ytimg.com/vi_webp/GCMvXJZXTKg/mqdefault.webp?v=66eef3de&sqp=CIjpu7cG&rs=AOn4CLDWNfoEXTjO8yP3N8cmY9Oq1IntCw)](https://youtu.be/GCMvXJZXTKg)
+[![Video Title](https://i9.ytimg.com/vi_webp/GCMvXJZXTKg/mqdefault.webp?v=66eef3de&sqp=CICA6rcG&rs=AOn4CLA7Q7hbHaXALapmJBUyqtyel8Fv3Q)](https://youtu.be/GCMvXJZXTKg)
 
 
 A project designed to help users practice the **Java Streams API**. This project is built using **Spring Boot** for the backend and **React** (with Vite) for the frontend.
