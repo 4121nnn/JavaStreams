@@ -1,9 +1,11 @@
 # Java Streams Project
 
-Click on the image to view on YouTube.
+Click on the images to view on YouTube.
 
 
-[![Video Title](back/src/main/resources/static/img.png)](https://youtu.be/GCMvXJZXTKg)
+
+[<img src="back/src/main/resources/static/img.png" alt="Video Title" style="width: 48%;">](https://youtu.be/GCMvXJZXTKg)
+[<img src="back/src/main/resources/static/img2.png" alt="Video Title" style="width: 48%;">](https://youtu.be/GCMvXJZXTKg)
 
 
 A project designed to help users practice the **Java Streams API**. This project is built using **Spring Boot** for the backend and **React** (with Vite) for the frontend.
